@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+.heading {
+    font-size: 30px;
+    width: 100%;
+    margin: 0px;
+    box-shadow: 5px 5px 5px #cccc;
+}
+
+body {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.body:hover, .heading:hover, .copy_right:hover {
+    cursor: default;
+}
+
+.note {
+    font-size: 20px;
+    color: black;
+}
+.copy_right {
+    color:#eee;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+}
+canvas {
+    border: 5px solid whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #cccc;
+}
+
+
+body.dark-mode .heading, body.dark-mode .copy_right {
+    background-color: #ccc;
+    border-color: #cccc;
+    color: #333;
+}
+
+
+
+
+
+.bottom {
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    background-color: grey;
+}
+
+.switch-container {
+    left: 5px;
+    bottom: 9px;
+    position: fixed;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark-mode #searchPanel, body.dark-mode #searchInput  {
+    background-color: darkgrey;
+    color: lightgray;
+  }
+  
+  .switch-checkbox {
+    display: none;
+  }
+  
+  .switch-label {
+    display: block;
+    width: 54.5px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .switch-label:before {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s;
+  }
+  
+  .switch-checkbox:checked + .switch-label {
+    background-color: #66bb6a;
+  }
+  
+  .switch-checkbox:checked + .switch-label:before {
+    left: 32px;
+  }
+  
